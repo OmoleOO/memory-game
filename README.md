@@ -13,4 +13,4 @@
 
 ## Play
 
-Visit [Memory Game](https://omoleoo.github.io/memory-game) to play.
+Visit [Memory Game](https://omoleoo.github.io/memory-game/) to play.
