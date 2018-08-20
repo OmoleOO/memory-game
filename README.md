@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-* [Tech Stack](#stack)
+* [Tech Stack](#tech-stack)
 * [Play](#play)
 
 ## Tech Stack
