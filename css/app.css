@@ -90,14 +90,114 @@ h1 {
     cursor: default;
     background: #02ccba;
     font-size: 34px;
-    animation: jiggy 1s ease-out 3 alternate;
+    -moz-animation: jiggy 1s alternate;
+    -webkit-animation: jiggy 1s alternate;
+    -o-animation: jiggy 1s alternate;
+    animation: jiggy 1s alternate;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 .deck .card.not-match {
     cursor: default;
     background: #3d0508;
     font-size: 34px;
-    animation: jiggy-not_matched  2s ease-out 1 running;
+    -moz-animation: jiggy-not_matched  1s alternate;
+    -webkit-animation: jiggy-not_matched  1s alternate;
+    -o-animation: jiggy-not_matched  1s alternate;
+    animation: jiggy-not_matched  1s alternate;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+
+/* Animation */
+@-webkit-keyframes jiggy {
+    0%, 75%, 100% {
+        transform: rotate(30deg);
+     }
+    50%   {
+        transform: rotate(-30deg);
+     }
+
+   60%, 90%   {
+       transform: rotate(-15deg);
+    }
+}
+
+@-o-keyframes jiggy {
+    0%, 75%, 100% {
+        transform: rotate(30deg);
+     }
+    50%   {
+        transform: rotate(-30deg);
+     }
+
+   60%, 90%   {
+       transform: rotate(-15deg);
+    }
+}
+
+@-moz-keyframes jiggy {
+    0%, 75%, 100% {
+        transform: rotate(30deg);
+     }
+    50%   {
+        transform: rotate(-30deg);
+     }
+
+   60%, 90%   {
+       transform: rotate(-15deg);
+    }
+}
+
+@keyframes jiggy {
+    0%, 75%, 100% {
+        transform: rotate(30deg);
+     }
+    50%   {
+        transform: rotate(-30deg);
+     }
+
+   60%, 90%   {
+       transform: rotate(-15deg);
+    }
+}
+
+@-webkit-keyframes jiggy-not_matched {
+    from {
+        transform: rotateY(60deg);
+     }
+    to   {
+        transform: rotateY(360deg)
+     }
+}
+
+@-o-keyframes jiggy-not_matched {
+    from {
+        transform: rotateY(60deg);
+     }
+    to   {
+        transform: rotateY(360deg)
+     }
+}
+
+@-moz-keyframes jiggy-not_matched {
+    from {
+        transform: rotateY(60deg);
+     }
+    to   {
+        transform: rotateY(360deg)
+     }
+}
+
+@keyframes jiggy-not_matched {
+    from {
+        transform: rotateY(60deg);
+     }
+    to   {
+        transform: rotateY(360deg)
+     }
 }
 
 /* Modal Styles */
@@ -144,25 +244,6 @@ h1 {
 
 .modal p {
   margin: 0;
-}
-
-/* Animation */
-@keyframes jiggy {
-    from {
-        transform: rotate(30deg);
-     }
-    to   {
-        transform: rotate(-30deg)
-     }
-}
-
-@keyframes jiggy-not_matched {
-    from {
-        transform: rotateY(60deg);
-     }
-    to   {
-        transform: rotateY(360deg)
-     }
 }
 
 /*
