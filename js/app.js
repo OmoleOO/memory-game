@@ -174,7 +174,7 @@ function appendChildToFragment(elements=[]){
 }
 
 function resetStars(){
-  stars.textContent = '';
+  stars.innerHTML = '';
   const [li1, li2, li3] = createMultipleElements(3, "li");
   addToInnerHtml([li1, li2, li3], '<i class="fa fa-star"></i>');
   let fragment = appendChildToFragment([li1, li2, li3]);
@@ -187,15 +187,15 @@ function resetStars(){
 function handleStars(){
     if (Number(moves.textContent) >  12)
     {
-        stars.textContent = '';
+        stars.innerHTML = '';
         const [li1, li2] = createMultipleElements(2, "li");
         addToInnerHtml([li1, li2], '<i class="fa fa-star"></i>');
         let fragment = appendChildToFragment([li1, li2]);
         stars.appendChild(fragment);
     }
-    else if (Number(moves.textContent) > 15)
+    else if (Number(moves.textContent) > 16)
     {
-        stars.textContent = '';
+        stars.innerHTML = '';
         const [li1] = createMultipleElements(1, "li");
         addToInnerHtml([li1], '<i class="fa fa-star"></i>');
         let fragment = appendChildToFragment([li1]);
