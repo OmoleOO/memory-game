@@ -193,7 +193,7 @@ function handleStars(){
         let fragment = appendChildToFragment([li1, li2]);
         stars.appendChild(fragment);
     }
-    else if (Number(moves.textContent) > 20)
+    else if (Number(moves.textContent) > 17)
     {
         stars.textContent = '';
         const [li1] = createMultipleElements(1, "li");
