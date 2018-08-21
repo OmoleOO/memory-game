@@ -95,6 +95,8 @@ h1 {
     -o-animation: jiggy 1s alternate;
     animation: jiggy 1s alternate;
     -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
     transition: all 2s ease;
 }
 
@@ -107,6 +109,8 @@ h1 {
     -o-animation: jiggy-not_matched  1s alternate;
     animation: jiggy-not_matched  1s alternate;
     -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
     transition: all 2s ease;
 }
 
