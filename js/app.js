@@ -157,16 +157,14 @@ function createMultipleElements(amount, element){
 }
 
 
-function addToInnerHtml(elements = [], html = '')
-{
+function addToInnerHtml(elements = [], html = ''){
   for (let element of elements){
     element.innerHTML = html;
   }
 }
 
 
-function appendChildToFragment(elements=[])
-{
+function appendChildToFragment(elements=[]){
   const fragment = document.createDocumentFragment();
   for (let element of elements){
     fragment.appendChild(element);
@@ -191,8 +189,6 @@ function handleStars(){
     {
         stars.textContent = '';
         const [li1, li2] = createMultipleElements(2, "li");
-        // li1.innerHTML = '<i class="fa fa-star"></i>';
-        // li2.innerHTML = '<i class="fa fa-star"></i>';
         addToInnerHtml([li1, li2], '<i class="fa fa-star"></i>');
         let fragment = appendChildToFragment([li1, li2]);
         stars.appendChild(fragment);
@@ -201,7 +197,6 @@ function handleStars(){
     {
         stars.textContent = '';
         const [li1] = createMultipleElements(1, "li");
-        // li1.innerHTML = '<i class="fa fa-star"></i>';
         addToInnerHtml([li1], '<i class="fa fa-star"></i>');
         let fragment = appendChildToFragment([li1]);
         stars.appendChild(fragment);
@@ -282,15 +277,23 @@ function hideModal(){
  */
 function showModal(){
     modal.style.display = 'flex';
+    let modalBody = document.querySelector('.modal-body');
+    modalBody.textContent = "";
     let fragment = document.createDocumentFragment();
     let modalMoves = document.createElement("p");
+    let congratsText = document.createElement("p");
+    let win = document.createElement("p");
     let modalStars = document.createElement("span");
     modalStars.classList.add("stars");
+    congratsText.textContent = "Congratulations!";
+    win.textContent = "You win!";
     modalStars.innerHTML = stars.innerHTML;
     modalMoves.innerHTML = `${moves.textContent} moves made`;
+    fragment.appendChild(congratsText);
+    fragment.appendChild(win);
     fragment.appendChild(modalMoves);
     fragment.appendChild(modalStars);
-    document.querySelector('.modal-body').appendChild(fragment);
+    modalBody.appendChild(fragment);
 }
 
 /**
