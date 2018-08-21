@@ -185,21 +185,21 @@ function resetStars(){
  * @description Change number of stars shown based on the number of moves made
  */
 function handleStars(){
-    if (Number(moves.textContent) >  12)
+    if (Number(moves.textContent) >  16)
     {
-        stars.innerHTML = '';
-        const [li1, li2] = createMultipleElements(2, "li");
-        addToInnerHtml([li1, li2], '<i class="fa fa-star"></i>');
-        let fragment = appendChildToFragment([li1, li2]);
-        stars.appendChild(fragment);
+      stars.innerHTML = '';
+      const [li1] = createMultipleElements(1, "li");
+      addToInnerHtml([li1], '<i class="fa fa-star"></i>');
+      let fragment = appendChildToFragment([li1]);
+      stars.appendChild(fragment);
     }
-    else if (Number(moves.textContent) > 16)
+    else if (Number(moves.textContent) > 12)
     {
-        stars.innerHTML = '';
-        const [li1] = createMultipleElements(1, "li");
-        addToInnerHtml([li1], '<i class="fa fa-star"></i>');
-        let fragment = appendChildToFragment([li1]);
-        stars.appendChild(fragment);
+      stars.innerHTML = '';
+      const [li1, li2] = createMultipleElements(2, "li");
+      addToInnerHtml([li1, li2], '<i class="fa fa-star"></i>');
+      let fragment = appendChildToFragment([li1, li2]);
+      stars.appendChild(fragment);
     }
     else {
         resetStars();
