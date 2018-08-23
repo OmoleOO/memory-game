@@ -15,7 +15,7 @@
    * @returns {array} shuffled cards
    */
   function shuffle(array) {
-      var currentIndex = array.length, temporaryValue, randomIndex;
+      let currentIndex = array.length, temporaryValue, randomIndex;
 
       while (currentIndex !== 0) {
           randomIndex = Math.floor(Math.random() * currentIndex);
