@@ -37,15 +37,14 @@ h1 {
  */
 
 .deck {
-    background: linear-gradient(160deg, #02ccba 0%, #0d7ad3 100%);
-    /* padding: 32px; */
+    background-color: linear-gradient(160deg, #02ccba 0%, #0d7ad3 100%);
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVQYV2NMKL/ty4AFLOhU3cwIkgQxsCkYdJIADnscCF7NGkIAAAAASUVORK5CYII=
+    ) repeat;
     border-radius: 10px;
-    box-shadow: 2px 9px 20px 0 rgba(46, 61, 73, 0.5);
+    box-shadow: 2px 9px 20px 0 #0241cc57;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-content: space-evenly;
-    /* margin: 0 0 3em;  */
 }
 
 .deck {
@@ -59,7 +58,7 @@ h1 {
 
 
 .deck .card {
-    background: #2e3d49;
+    background: linear-gradient(160deg, #880f8b, #0241cc);
     font-size: 0;
     color: #ffffff;
     border-radius: 8px;
@@ -88,7 +87,7 @@ h1 {
 
 .deck .card.match {
     cursor: default;
-    background: #02ccba;
+    background: #0241cc;
     font-size: 34px;
     -moz-animation: jiggy 1s alternate;
     -webkit-animation: jiggy 1s alternate;
@@ -206,7 +205,7 @@ h1 {
 
 /* Modal Styles */
 .modal {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, .7);
     position: absolute;
     top: 0;
     width: 100%;
@@ -218,11 +217,14 @@ h1 {
 }
 
 .modal-content {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVQYV2NMKL/ty4AFLOhU3cwIkgQxsCkYdJIADnscCF7NGkIAAAAASUVORK5CYII=
+    ) repeat;
     width: 500px;
     height: 300px;
     background-color: #fff;
     position: relative;
     border-radius: 5px;
+    color: #0241cc;
 }
 
 .close {
@@ -262,8 +264,9 @@ h1 {
     align-items: center;
     font-size: 2em;
     margin-top: 50px;
-    box-shadow: 2px 9px 20px 0 rgba(46, 61, 73, 0.5);
-    background: linear-gradient(160deg, #02ccba 0%, #0d7ad3 100%);
+    box-shadow: 2px 9px 20px 0 #0241cc57;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVQYV2NMKL/ty4AFLOhU3cwIkgQxsCkYdJIADnscCF7NGkIAAAAASUVORK5CYII=
+    ) repeat;
 }
 
 .stars {
@@ -285,11 +288,11 @@ h1 {
     text-align: center;
     min-height: 40px;
     min-width: 40px;
-    color: #00ffe4;
+    color: #0241cc;
 }
 
 .timer {
-    color: #fff;
+    color: #e81313;
     opacity: .6;
     margin: 0 10px;
  }
